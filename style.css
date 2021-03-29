@@ -20,12 +20,14 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
   /* Size */
+  --size-border-radius: 4px;
 }
 
 /* Universal tags */
@@ -33,6 +35,23 @@
   box-sizing: border-box;
 }
 
+/* cursor : 글자에 마우스를 올려도 변하지 않는다. */
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  /* test-decoration : 링크에 밑줄 그어지는것 */
+}
+
+ul {
+  list-style: none;
+  /* list-style : li태그의 표시되는 점 */
+  padding-left: 0px;
+}
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -60,4 +79,42 @@ p {
   font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0px;
+}
+
+/* Navbar */
+/* 
+    flexbox을 위해 제공되는 속성들 꼭 읽어볼것
+    http://www.tcpschool.com/css/css3_expand_flexbox
+    justify-content : 브라우저 사이와 함께 주위의 콘텐츠 항목의 공간을 배포하는 방법 속성을 정의
+        >> 정렬 느낌
+*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-pink);
+  align-items: center;
+  color: var(--color-white);
+  padding: 16px;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0px 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
 }
