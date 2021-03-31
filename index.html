@@ -1,224 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShimHyeokJin's Portfolio</title>
-    <meta name="description" content="Portfolio for developer ShimHyeokJin">
-    <meta name="author" conetent="ShimHyeokJin">
-    <link rel="icon" type="image/png" href="imgs/neshot.png">
-    <script src="https://kit.fontawesome.com/719ae26eec.js" crossorigin="anonymous"></script>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio for developer ShimHyeokJin" />
+    <meta name="author" conetent="ShimHyeokJin" />
+    <link rel="icon" type="image/png" href="imgs/neshot.png" />
+    <script
+      src="https://kit.fontawesome.com/719ae26eec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
-            <a href="#">ShimHyeokJin</a>
-        </div>
-        <div class="navbar__menu">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">Work</li>
-                <li class="navbar__menu__item">Testimonials</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">ShimHyeokJin</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">Work</li>
+          <li class="navbar__menu__item">Testimonials</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="imgs/ID_Photo.jpg" alt="HyeokJin's profile" class="home__avatar">
-        <h1 class="home__title">Hello, <br/>I'm DreamCoder</h1>
-        <h2 class="home__description">I'm aiming for a full stack developer.</h2>
-        <button class="home__contact">Contact me</button>
+      <img
+        src="imgs/ID_Photo.jpg"
+        alt="HyeokJin's profile"
+        class="home__avatar"
+      />
+      <h1 class="home__title">Hello, <br />I'm DreamCoder</h1>
+      <h2 class="home__description">I'm aiming for a full stack developer.</h2>
+      <button class="home__contact">Contact me</button>
     </section>
     <!-- About -->
-    <section id="about" class="section">
-        <h1>About me</h1>
-        <p>나에 대해서 작성 하는 공간</p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <p class="major__description">
-                    HTML, CSS, JavaScript, Vue
-                </p>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <p class="major__description">
-                    Java, Spring Framework, <br>
-                    JavaScript, NodeJS, Python
-                </p>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h2 class="major__title">Database</h2>
-                <p class="major__description">
-                    Oracle, SQLite
-                </p>
-            </div>
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>나에 대해서 작성 하는 공간</p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">HTML, CSS, JavaScript, Vue</p>
         </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="imgs/jobs/KOSMO.jpg" alt="KOSMO 한국소프트웨어인재개발원" class="job__logo" width="100" height="30">
-                <div class="job__description">
-                    <p class="job__name">KOSMO 한국소프트웨어인재개발원</p>
-                    <p class="job__period">2020.9.21 ~ 2021.03.11</p>
-                </div>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Java, Spring Framework, <br />
+            JavaScript, NodeJS, Python
+          </p>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h2 class="major__title">Database</h2>
+          <p class="major__description">Oracle, SQLite</p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/KOSMO.jpg"
+            alt="KOSMO 한국소프트웨어인재개발원"
+            class="job__logo"
+            width="100"
+            height="30"
+          />
+          <div class="job__description">
+            <p class="job__name">KOSMO 한국소프트웨어인재개발원</p>
+            <p class="job__period">2020.9.21 ~ 2021.03.11</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
+      <div class="section__container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>스킬들을 설명할 내용</p>
         <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Java</span>
-                        <span>60%</span>
-                        <!-- <progress max="100" value="99">99%</progress> -->
-                        <!-- progress라는 태그로 표시할 수 있으나 스타일링이 어려운 단점 -->
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Vue</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value">
-                            
-                        </div>
-                    </div>
-                </div>
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Java</span>
+                <span>60%</span>
+                <!-- <progress max="100" value="99">99%</progress> -->
+                <!-- progress라는 태그로 표시할 수 있으나 스타일링이 어려운 단점 -->
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
             </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Eclipse</span></li>
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>IntelliJ</span></li>
-                        <li><span>PyCharm</span></li>
-                        <li><span>SQL Developer</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Math</span></li>
-                    </ul>
-                </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
             </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Vue</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Python</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Eclipse</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+                <li><span>PyCharm</span></li>
+                <li><span>SQL Developer</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Math</span></li>
+                <li><span>Statistics</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Work -->
     <section id="work" class="section">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <button class="category__btn">All<span class="category__count">3</span></button>
-            <button class="category__btn">Front-end<span class="category__count">1</span></button>
-            <button class="category__btn">Back-end<span class="category__count">2</span></button>
-        </div>
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn">
+          All<span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Front-end<span class="category__count">1</span>
+        </button>
+        <button class="category__btn">
+          Back-end<span class="category__count">2</span>
+        </button>
+      </div>
 
-        <div class="work__projects">
-            <a href="#" class="project" target="blank">
-                <img src="imgs/projects/FitHe_macbook.png" class="project__img" alt="FitHe">
-                <div class="project__description">
-                    <h3>FitHe</h3>
-                    <span>Team Project with Java Spring</span>
-                </div>
-            </a>
-        </div>
+      <div class="work__projects">
+        <a
+          href="https://github.com/shj3497/TeamFitHe"
+          class="project"
+          target="blank"
+        >
+          <img
+            src="imgs/projects/FitHe_macbook.png"
+            class="project__img"
+            alt="FitHe"
+          />
+          <div class="project__description">
+            <h3>FitHe</h3>
+            <span>Team Project with Java Spring</span>
+          </div>
+        </a>
+      </div>
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-                <div class="testimonial__speech-bubble">
-                    <p></p>
-                    <p class="name"><a href="#">People</a> / KOSMO</p>
-                </div>
-            </div>
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img
+            src="imgs/testimonial/people1.jpg"
+            alt="People"
+            class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p></p>
+            <p class="name"><a href="#">People</a> / KOSMO</p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">shj3497@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/shj3497" target="blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="blank">
-                <i class="fa fa-linkedin-square"></i>
-            </a>
-        </div>
-        <p class="contact__rights">
-            2021 ShimHyeokJin - All rights reserved
-        </p>
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">shj3497@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/shj3497" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2021 ShimHyeokJin - All rights reserved</p>
     </section>
-</body>
+  </body>
 </html>
