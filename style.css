@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0px;
@@ -379,7 +379,7 @@ p {
 }
 
 .work__project_link {
-  font-size: 25px;
+  font-size: var(--font-medium);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -397,6 +397,7 @@ p {
 .testimonial {
   display: flex;
   margin: 32px 0px;
+  justify-content: center;
 }
 
 .testimonial__avatar {
@@ -425,4 +426,46 @@ p {
 
 .testimonial__speech-bubble a {
   color: var(--color-pink);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-pink);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights p,
+.contact__links i {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0px;
+}
+.contact__info {
+  display: flex;
+  width: 450px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  justify-content: center;
+}
+.contact__links {
+  display: flex;
+  font-size: var(--font-large);
+  margin: 0px;
+  transition: all var(--animation-duration) ease;
+}
+
+.contact__links a {
+  margin: 0px 5px;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
+
+.contact__rights {
+  font-size: var(--font-small);
 }
