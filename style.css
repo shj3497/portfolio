@@ -330,10 +330,12 @@ p {
   justify-content: center;
 }
 
+.work__project {
+  position: relative;
+}
 .project {
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
   width: 280px;
   height: 250px;
@@ -360,23 +362,25 @@ p {
   transform: translateY(10px);
   transition: all var(--animation-duration);
 }
-.project:hover .project__description {
+.work__project:hover .project__description {
   transform: translateY(0px);
   opacity: 0.8;
 }
 
-.project__description h3 {
+.project__description h3,
+.project__description span {
   color: var(--color-white);
 }
 
-.project__description h3:after {
+.project__description:after {
   content: "";
   display: block;
   position: relative;
-  left: 50%;
-  width: 25px;
-  height: 2px;
-  margin-left: -12px;
-  margin-top: 8px;
-  background-color: var(--color-dark-white);
+}
+
+.work__project_link {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
