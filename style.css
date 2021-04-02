@@ -323,7 +323,7 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
-  padding: 8px 48px;
+  padding: 8px 24px;
 }
 
 .category__btn.active,
@@ -361,16 +361,11 @@ p {
 
 .work__project {
   position: relative;
-  width: 280px;
-  height: 250px;
-}
-.project {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 2px;
+  width: 280px;
+  height: 250px;
   background-color: var(--color-light-white);
 }
 
@@ -474,7 +469,7 @@ p {
 }
 
 .contact__title,
-.contact__email,
+.contact__email a,
 .contact__rights p,
 .contact__links i {
   color: var(--color-white);
@@ -483,6 +478,14 @@ p {
 .contact__title {
   margin: 16px 0px;
 }
+
+.contact__email:hover,
+.contact__email a:hover {
+  transform: scale(1.1);
+  transition: all var(--animation-duration) ease;
+  color: var(--color-yellow);
+}
+
 .contact__info {
   display: flex;
   width: 100%;
