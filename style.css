@@ -101,12 +101,21 @@ p {
         >> 정렬 느낌
 */
 #navbar {
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-green);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  z-index: 1;
+}
+#navbar.navbar--dark {
+  background-color: var(--color-green);
+  opacity: 0.5;
+  padding: 4px;
+  transition: all var(--animation-duration) ease;
 }
 
 .navbar__logo {
@@ -139,9 +148,10 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 20px;
-  right: 32px;
+  padding: 5px;
+  right: 16px;
   font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
   color: var(--color-white);
   display: none;
 }
@@ -150,6 +160,7 @@ p {
 #home {
   background: url("imgs/beautiful_sky.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
