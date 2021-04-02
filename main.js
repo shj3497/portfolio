@@ -28,10 +28,30 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){
         return;
     }
-    console.log(`link >>> : ${link}`);
-    const scrollTo = document.querySelector(link);
+    //console.log(`link >>> : ${link}`);
+
+    scrollIntoView(link);
+})
+
+// Handle Scrolling when tapping on the home__contact
+const homeContact = document.querySelector('.home__contact');
+homeContact.addEventListener('click', (event) => {
+    const target = event.target;
+    const link = target.dataset.link;
+    //console.log(link);
+
+    if(link == null){
+        return;
+    }
     
+    scrollIntoView(link);
+});
+
+// 추상함수의 개념
+// 기존에 있던 함수지만, 우리가 새로 정의
+function scrollIntoView(selection){
+    const scrollTo = document.querySelector(selection);
     scrollTo.scrollIntoView({
         behavior: 'smooth'
     });
-})
+}
