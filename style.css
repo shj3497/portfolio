@@ -119,6 +119,7 @@ p {
 }
 
 .navbar__logo {
+  height: 40px;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
@@ -129,11 +130,13 @@ p {
 
 .navbar__menu {
   display: flex;
+  height: 40px;
+  margin: 0px;
 }
 
 .navbar__menu__item {
   padding: 8px 12px;
-  margin: 0px 4px;
+  margin: 0px 2px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
 }
