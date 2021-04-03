@@ -55,7 +55,19 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight
 })
 
+// Show 'arrow__up-btn' button when scrolling down
+const upBtn = document.querySelector('.arrow__up-btn');
+upBtn.addEventListener('click', (event) => {
+    scrollIntoView('#home');
+})
+document.addEventListener('scroll', () => {
 
+    if(window.scrollY > homeHeight * 0.5){
+        upBtn.classList.add('visible');
+    }else{
+        upBtn.classList.remove('visible');
+    }
+})
 
 
 

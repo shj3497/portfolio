@@ -512,6 +512,30 @@ p {
   font-size: var(--font-small);
 }
 
+/* Scroll */
+.arrow__up-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: var(--font-large);
+  font-weight: var(--weight-regular);
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-light-pink);
+  border: 1px solid var(--color-light-pink);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in;
+  pointer-events: none;
+}
+
+.arrow__up-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
