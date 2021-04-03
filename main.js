@@ -70,6 +70,69 @@ document.addEventListener('scroll', () => {
 })
 
 
+// Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.work__project');
+// .work__projects는 여러개니까 자동으로 배열로 저장되나보네..
+
+workBtnContainer.addEventListener('click', (event) => {
+    // 타겟의 data-가 filter or 타겟의 부모노드의 data-가 filter 이면 변수 filter에 저장
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    //console.log(filter);
+    
+    projectContainer.classList.add('anim-out');
+    
+    /*
+    setTimeout()으로 들어간 이유는 자바스크립트는 병렬처리라서
+    anim-out라는 클래스를 추가 후 0.3초 이후에 프로젝트를 필터링하게 동작
+
+    projects.forEach((project) => {
+        console.log(project.dataset.type);
+
+        if(filter ==='*' || filter === project.dataset.type){
+            // filter가 *(all) or filter가 data-type과 일치하는경우
+            // invisible이라는 클래스를 제거
+            project.classList.remove('invisible');
+        }else{
+            // invisible이라는 클래스를 추가
+            project.classList.add('invisible');
+        }
+    })
+    
+    forEach()와 동일
+    1.
+    for(let project of projects){}
+    
+    2. 
+    let projects;
+    for(let i=0; i<projects.length; i++){
+        project = projects[i];
+    }
+
+    문법...
+    */
+    setTimeout(() => {
+        projects.forEach((project) => {
+            console.log(project.dataset.type);
+    
+            if(filter ==='*' || filter === project.dataset.type){
+                // filter가 *(all) or filter가 data-type과 일치하는경우
+                // invisible이라는 클래스를 제거
+                project.classList.remove('invisible');
+            }else{
+                // invisible이라는 클래스를 추가
+                project.classList.add('invisible');
+            }
+        })
+        projectContainer.classList.remove('anim-out');
+    }, 300);
+})
+
+
 
 
 
