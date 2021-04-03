@@ -47,6 +47,23 @@ homeContact.addEventListener('click', (event) => {
     scrollIntoView(link);
 });
 
+// Make home slowly fade to transparent as the window scrolls down.home__contact
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    //console.log(1 - window.scrollY / homeHeight);
+    home.style.opacity = 1 - window.scrollY / homeHeight
+})
+
+
+
+
+
+
+
+
+
+
 // 추상함수의 개념
 // 기존에 있던 함수지만, 우리가 새로 정의
 function scrollIntoView(selection){
@@ -55,3 +72,4 @@ function scrollIntoView(selection){
         behavior: 'smooth'
     });
 }
+
