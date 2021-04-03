@@ -133,7 +133,6 @@ p {
   height: 100%;
   margin: 0px;
 }
-
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0px 2px;
@@ -239,7 +238,10 @@ p {
   display: flex;
   align-items: center;
 }
-
+.job__logo {
+  width: 100px;
+  height: 30px;
+}
 .job__description {
   margin: 0px 16px;
   text-align: left;
@@ -583,6 +585,10 @@ p {
     margin: 38px;
   }
 
+  .job__logo {
+    width: 75px;
+    height: 46px;
+  }
   .skillset {
     flex-direction: column;
   }
