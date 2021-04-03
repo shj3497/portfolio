@@ -84,8 +84,20 @@ workBtnContainer.addEventListener('click', (event) => {
     }
     //console.log(filter);
     
-    projectContainer.classList.add('anim-out');
-    
+    // button클릭시 span으로 지정된 숫자를 누르게 되면 에러가 나니까 이를 수정하기위해 target을 재지정 해줬다.
+    //const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+
+    // Remove selection from the previous item and select the new one
+    const active = document.querySelector('.category__btn.selected');
+    // active는 default로 설정되어있는 것
+    active.classList.remove('selected');
+    // 타겟이 눌리면 이 default의 selected를 제거하고,
+    // 타겟에 selected 클래스를 추가해준다.
+    event.target.classList.add('selected');
+    event.target.parentNode.classList.add('selected');
+
+
+    projectContainer.classList.add('anim-out');  
     /*
     setTimeout()으로 들어간 이유는 자바스크립트는 병렬처리라서
     anim-out라는 클래스를 추가 후 0.3초 이후에 프로젝트를 필터링하게 동작
@@ -117,7 +129,7 @@ workBtnContainer.addEventListener('click', (event) => {
     */
     setTimeout(() => {
         projects.forEach((project) => {
-            console.log(project.dataset.type);
+            //console.log(project.dataset.type);
     
             if(filter ==='*' || filter === project.dataset.type){
                 // filter가 *(all) or filter가 data-type과 일치하는경우
