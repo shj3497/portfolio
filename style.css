@@ -521,9 +521,11 @@ p {
 .contact__links a {
   margin: 0px 10px;
 }
+
 .contact__links i:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
   color: var(--color-yellow);
+  transition: transform and var(--animation-duration) ease;
 }
 
 .contact__rights {
