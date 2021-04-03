@@ -29,8 +29,9 @@ navbarMenu.addEventListener('click', (event) => {
         return;
     }
     //console.log(`link >>> : ${link}`);
-
     scrollIntoView(link);
+
+    navbarMenu.classList.remove('open');
 })
 
 // Handle Scrolling when tapping on the home__contact
@@ -144,8 +145,13 @@ workBtnContainer.addEventListener('click', (event) => {
     }, 300);
 })
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');;
 
-
+console.log(navbarToggleBtn);
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+})
 
 
 

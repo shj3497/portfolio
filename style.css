@@ -81,14 +81,14 @@ h2 {
 
 h3 {
   font-size: var(--font-regular);
-  font-weight: var(--font-regular);
+  font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0px;
 }
 
 p {
   font-size: var(--font-regular);
-  font-weight: var(--font-regular);
+  font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0px;
 }
@@ -130,7 +130,7 @@ p {
 
 .navbar__menu {
   display: flex;
-  height: 40px;
+  height: 100%;
   margin: 0px;
 }
 
@@ -400,12 +400,16 @@ p {
   transform: translateY(10px);
   transition: all var(--animation-duration);
 }
+
 .work__project:hover .project__description {
   transform: translateY(0px);
   opacity: 0.8;
 }
 
-.project__description h3,
+.project__description h3 {
+  color: var(--color-orange);
+}
+
 .project__description span {
   color: var(--color-white);
 }
@@ -557,6 +561,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-green);
   }
 
   .navbar__menu {
@@ -564,6 +569,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
