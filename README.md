@@ -1,9 +1,7 @@
 # Portfolio
 
-## Notion
+## [Link](https://shj3497.github.io/portfolio/)
 
-- [Notion](https://www.notion.so/dd90e5a07ddb42839325824f392c8dd1)
+## screenshot
 
-## history
-
-1. 2021-03-19 23:58 : first commit
+![screenshot](imgs/portfolio_img.png)
