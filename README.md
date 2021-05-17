@@ -4,4 +4,4 @@
 
 ## screenshot
 
-![screenshot](imgs/portfolio_img2.png)
+![screenshot](imgs/screenshot.png)
