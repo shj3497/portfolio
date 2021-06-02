@@ -380,6 +380,7 @@ p {
   width: 280px;
   height: 250px;
   background-color: var(--color-white);
+  margin: 10px;
 }
 
 .work__project.invisible {
